@@ -56,101 +56,101 @@ You are working hard to become a kick-ass software engineer.  One of the best wa
     
 3. We are already linking to a custom CSS file, so we need to create this file.  If your website workspace does not already have a `css` directory, create one now in the ROOT directory of your website.  Into this `css` directory, create a file called `studies.css`.  Open this `studies.css` file and into paste the following CSS rules:
 
-````CSS
-body {
-    background: rgb(125, 198, 205);
-    color: rgb(45, 45, 45);
-    padding: 10px;
-    font-family: arial;
-}
-
-header {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-[id=all-contents] {
-    max-width: 800px;
-    margin: auto;
-}
-
-
-/* Main navigation menu */
-
-nav {
-    background: rgb(239, 80, 41);
-    margin: 0 auto;
-    display: flex;
-    padding: 10px;
-}
-
-nav header {
-    display: flex;
-    align-items: center;
-    color: rgb(255, 255, 255);
-    flex: 1;
-}
-
-nav ul {
-    list-style-image: none;
-}
-
-nav li {
-    display: inline-block;
-    padding: 0 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
-
-
-/* Main container area beneath menu */
-
-main {
-    background: rgb(245, 238, 219);
-    display: flex;
-    flex-direction: column;
-}
-
-[class=sidebar] {
-    margin-right: 25px;
-    padding: 10px;
-}
-
-[class=sidebar] img {
-    width: 200px;
-}
-
-[class=content] {
-    flex: 1;
-    padding: 15px;
-}
-
-.content h1, h2, h3, h4, h5, h6 {
-    margin: 10px;
-}
-
-.content section > a {
-    text-decoration: none;
-}
-````
+  ````CSS
+  body {
+      background: rgb(125, 198, 205);
+      color: rgb(45, 45, 45);
+      padding: 10px;
+      font-family: arial;
+  }
+  
+  header {
+      font-size: 1.5em;
+      font-weight: bold;
+  }
+  
+  [id=all-contents] {
+      max-width: 800px;
+      margin: auto;
+  }
+  
+  
+  /* Main navigation menu */
+  
+  nav {
+      background: rgb(239, 80, 41);
+      margin: 0 auto;
+      display: flex;
+      padding: 10px;
+  }
+  
+  nav header {
+      display: flex;
+      align-items: center;
+      color: rgb(255, 255, 255);
+      flex: 1;
+  }
+  
+  nav ul {
+      list-style-image: none;
+  }
+  
+  nav li {
+      display: inline-block;
+      padding: 0 10px;
+  }
+  
+  nav a {
+      text-decoration: none;
+      color: #fff;
+  }
+  
+  
+  /* Main container area beneath menu */
+  
+  main {
+      background: rgb(245, 238, 219);
+      display: flex;
+      flex-direction: column;
+  }
+  
+  [class=sidebar] {
+      margin-right: 25px;
+      padding: 10px;
+  }
+  
+  [class=sidebar] img {
+      width: 200px;
+  }
+  
+  [class=content] {
+      flex: 1;
+      padding: 15px;
+  }
+  
+  .content h1, h2, h3, h4, h5, h6 {
+      margin: 10px;
+  }
+  
+  .content section > a {
+      text-decoration: none;
+  }
+  ````
 
   **NOTE:** These CSS rules contain the default styles from hte `first-website` project, so if you've pimped-out your styles to your liking, you'll need to edit these CSS style rules to match your fancypants styles.
     
 4. Fantastic!  But now we need to link our `studies.html` page in the nav-bar of each page in our website, otherwise, our users will not be able to navigate to our `studies.html` and see how smart we are:  Open both the **ROOT** `index.html` file of your website, and the `portfolio.html` file, and edit the `<nav></nav>` of each page to it matches this (note the inclusion of the new studies `<li></li>`):
 
-````HTML
-        <nav>
-            <header>Sheba's Glorious Website</header>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="studies.html">Studies</a></li>
-            </ul>
-        </nav>
-````
+  ````HTML
+          <nav>
+              <header>Sheba's Glorious Website</header>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="studies.html">Studies</a></li>
+              </ul>
+          </nav>
+  ````
 
 5. Save all your pages, and if your Apache webserver is running, you should be able to see a **Studies** link in your nav-bar, and you should be able to navigate to the `studies.html` page from each page in your website.
 
@@ -160,43 +160,43 @@ main {
 2. Create a new JSBin, and select **File > Add description**, and give your JSBin a description and `<title>` to match the name of the subtopic you're exemplifying, for example, "Variables".
 3. Implement your JSBin to illustrate the various concepts of the JavaScript subtopic you're exemplifying.  You should have code examples that clearly show you understand the concept.  Use single-line or multiline comments to explain your code.  **Ensure your code works and is valid** by running your JSBin!
 
-````javascript
-/*
- * VARIABLES:
- *
- * 0. To hold things in memory during the life-cycle of a program, we can use variables.  Variables 
- * are named identifiers that can point to values of a particular type, like a Number, String, 
- * Boolean, Array, Object or another data-type.  Variables are called so because once created, we 
- * can CHANGE the value (and type of value) to which they point.
- *
- * 1. To create a variable we use the keyword, var, followed by a name (id or alias) for our 
- * variable.
- *
- * 2. There are 2 phases of using variables: declaration and initialization (or assignment).
- */
-
-// 1. declaration //
-var myName; 
-
-/*
- * At the declaration phase, the variable myName is undefined because we have NOT initialized 
- * it to anything 
- */ 
-console.log(myName); // prints => undefined
-
-// 2. initialization or assignment //
-myName = 'john';
-console.log(myName); // prints => john
-
-// 3. re-assignment //
-myName = 'bob';
-console.log(myName); // prints => bob
-
-// NOTE: We can assign and re-assign anything to a variable - we cannot do this with constants //
-var myVariable = 1;
-var myVariable = true;
-myVariable = "someString";
-````
+  ````javascript
+  /*
+   * VARIABLES:
+   *
+   * 0. To hold things in memory during the life-cycle of a program, we can use variables.  Variables 
+   * are named identifiers that can point to values of a particular type, like a Number, String, 
+   * Boolean, Array, Object or another data-type.  Variables are called so because once created, we 
+   * can CHANGE the value (and type of value) to which they point.
+   *
+   * 1. To create a variable we use the keyword, var, followed by a name (id or alias) for our 
+   * variable.
+   *
+   * 2. There are 2 phases of using variables: declaration and initialization (or assignment).
+   */
+  
+  // 1. declaration //
+  var myName; 
+  
+  /*
+   * At the declaration phase, the variable myName is undefined because we have NOT initialized 
+   * it to anything 
+   */ 
+  console.log(myName); // prints => undefined
+  
+  // 2. initialization or assignment //
+  myName = 'john';
+  console.log(myName); // prints => john
+  
+  // 3. re-assignment //
+  myName = 'bob';
+  console.log(myName); // prints => bob
+  
+  // NOTE: We can assign and re-assign anything to a variable - we cannot do this with constants //
+  var myVariable = 1;
+  var myVariable = true;
+  myVariable = "someString";
+  ````
 
 4. Once you're cool with your code and you're sure it works, you want to create a **GitHub Gist** of your JSBin.  In JSBin, select **File > Export as gist**.  This will create an anonymous gist - and in the top of JSBin, click on the yellow tab at the top of the page that says, "Gist created! Open in new tab".  This will bring you to the anonymous gist at GitHub.
 5. Next, YOU MUST NEXT FORK this anonymous gist so that it is paired with your own GitHub account.  Do this by clicking the "Fork" button in top-right corner.
@@ -206,25 +206,25 @@ myVariable = "someString";
 
 1. Back in your `studies.html` page, find the **content** `<div></div>` tag that looks like this:
 
-````HTML
-            <div class="content">
-                <h1>Javascript</h1>
-                <!-- YOUR NOTE SECTIONS GO BELOW HERE -->
-                
-                
-                <!-- YOUR NOTE SECTIONS GO ABOVE HERE -->
-            </div>
-````
+  ````HTML
+              <div class="content">
+                  <h1>Javascript</h1>
+                  <!-- YOUR NOTE SECTIONS GO BELOW HERE -->
+                  
+                  
+                  <!-- YOUR NOTE SECTIONS GO ABOVE HERE -->
+              </div>
+  ````
 
     ...and between the comments that read `YOUR NOTE SECTIONS GO BELOW HERE` and `YOUR NOTE SECTIONS GO ABOVE HERE`, and per study note (gist), paste in the following `<section></section>`, this one exemplifying **Variables**:
     
-````HTML
-                <section>
-                    <hr>
-                    <a href="#variables"><h2>Variables</h2></a>
-                    <code data-gist-id="4ae6dead16cdb2271041" data-gist-file="jsbin.jihure.js" data-gist-hide-footer="true"></code>
-                </section>
-````
+  ````HTML
+                  <section>
+                      <hr>
+                      <a href="#variables"><h2>Variables</h2></a>
+                      <code data-gist-id="4ae6dead16cdb2271041" data-gist-file="jsbin.jihure.js" data-gist-hide-footer="true"></code>
+                  </section>
+  ````
 
 2. Importantly, in the `<code></code>` tag, replace the `data-gist-id` attribute with your gist id (the id can be found back on your GitHub gist page, as the last number in the URL of the gist), for example, `https://gist.github.com/jfraboni/4ae6dead16cdb2271041` - the gist id here is, `4ae6dead16cdb2271041`
 3. Finally, also in the `<code></code>`, replace the `data-gist-file` with the name of the gist sub-file, which you can find on the GitHub gist page, within the header of the of the JavaScript gist sub-file.  For example, the sub-file embedded from the gist at <a href="`https://gist.github.com/jfraboni/4ae6dead16cdb2271041`" target="_blank">https://gist.github.com/jfraboni/4ae6dead16cdb2271041</a> is `jsbin.jihure.js`.
