@@ -7,7 +7,7 @@
   - [Setup](#setup)
   - [Create a JSBin per JavaScript Subtopic](#create-a-jsbin-per-javascript-subtopic)
   - [Embed the Gist in your Studies](#embed-the-gist-in-your-studies)
-  - [JavaScript SubTopics](#javaScript-subtopics)
+  - [JavaScript SubTopics](#javascript-subtopics)
 
 ## Overview
 
@@ -52,7 +52,7 @@ You are working hard to become a kick-ass software engineer.  One of the best wa
 </html>
 ````
 
-    **NOTE:** In the above markdown, we're loading <a href="jquery.com" target="_blank">jQuery</a> and the <a href="https://github.com/blairvanderhoof/gist-embed" target="_blank">Gist Embed</a> library - these libraries will allow us to embed into our `studies.html` page, our GitHub gists containing our code examples for our studies notes.  You can read more about those libraries at the links provided.
+  **NOTE:** In the above markdown, we're loading <a href="jquery.com" target="_blank">jQuery</a> and the <a href="https://github.com/blairvanderhoof/gist-embed" target="_blank">Gist Embed</a> library - these libraries will allow us to embed into our `studies.html` page, our GitHub gists containing our code examples for our studies notes.  You can read more about those libraries at the links provided.
     
 3. We are already linking to a custom CSS file, so we need to create this file.  If your website workspace does not already have a `css` directory, create one now in the ROOT directory of your website.  Into this `css` directory, create a file called `studies.css`.  Open this `studies.css` file and into paste the following CSS rules:
 
@@ -137,7 +137,7 @@ main {
 }
 ````
 
-    **NOTE:** These CSS rules contain the default styles from hte `first-website` project, so if you've pimped-out your styles to your liking, you'll need to edit these CSS style rules to match your fancypants styles.
+  **NOTE:** These CSS rules contain the default styles from hte `first-website` project, so if you've pimped-out your styles to your liking, you'll need to edit these CSS style rules to match your fancypants styles.
     
 4. Fantastic!  But now we need to link our `studies.html` page in the nav-bar of each page in our website, otherwise, our users will not be able to navigate to our `studies.html` and see how smart we are:  Open both the **ROOT** `index.html` file of your website, and the `portfolio.html` file, and edit the `<nav></nav>` of each page to it matches this (note the inclusion of the new studies `<li></li>`):
 
