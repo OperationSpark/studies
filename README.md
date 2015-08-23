@@ -19,38 +19,38 @@ You are working hard to become a kick-ass software engineer.  One of the best wa
     studies.html
 2. Open the studies.html file to edit it and insert teh following markdown:
 
-````HTML
-<!DOCTYPE html>
-<html>
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.2/gist-embed.min.js"></script>
-        <link rel="stylesheet" href="css/studies.css" type="text/css" />
-        <title>Studies</title>
-    </head>
-    <body>
-        <div id="all-contents">
-        <nav>
-            <header>Sheba's Glorious Website</header>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="studies.html">Studies</a></li>
-            </ul>
-        </nav>
-        <main>
-            <div class="content">
-                <h1>Javascript</h1>
-                <!-- YOUR NOTE SECTIONS GO BELOW HERE -->
-                
-                
-                <!-- YOUR NOTE SECTIONS GO ABOVE HERE -->
-            </div>
-        </main>
-    </div>
-    </body>
-</html>
-````
+  ````HTML
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.2/gist-embed.min.js"></script>
+          <link rel="stylesheet" href="css/studies.css" type="text/css" />
+          <title>Studies</title>
+      </head>
+      <body>
+          <div id="all-contents">
+          <nav>
+              <header>Sheba's Glorious Website</header>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="studies.html">Studies</a></li>
+              </ul>
+          </nav>
+          <main>
+              <div class="content">
+                  <h1>Javascript</h1>
+                  <!-- YOUR NOTE SECTIONS GO BELOW HERE -->
+                  
+                  
+                  <!-- YOUR NOTE SECTIONS GO ABOVE HERE -->
+              </div>
+          </main>
+      </div>
+      </body>
+  </html>
+  ````
 
   **NOTE:** In the above markdown, we're loading <a href="jquery.com" target="_blank">jQuery</a> and the <a href="https://github.com/blairvanderhoof/gist-embed" target="_blank">Gist Embed</a> library - these libraries will allow us to embed into our `studies.html` page, our GitHub gists containing our code examples for our studies notes.  You can read more about those libraries at the links provided.
     
