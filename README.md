@@ -200,7 +200,7 @@ You are working hard to become a kick-ass software engineer.  One of the best wa
 
 4. Once you're cool with your code and you're sure it works, you want to create a **GitHub Gist** of your JSBin.  In JSBin, select **File > Export as gist**.  This will create an anonymous gist - and in the top of JSBin, click on the yellow tab at the top of the page that says, "Gist created! Open in new tab".  This will bring you to the anonymous gist at GitHub.
 5. Next, **YOU MUST FORK** this anonymous gist so that it is paired with your own GitHub account.  Do this by clicking the "Fork" button in top-right corner.
-6. Once you've forked your gist, you can optionally delete unused sub-files of the gist: JSBin will create separate gist files for the `html` portion of the gist, which in this case, are not needed - you are only interested in the `.js` sub-file in the gist, it will be called something like `jsbin.jihure.js`, where `jihure` is the JSBin id for your bin.  Yuo've created your gist, pat yourself on the back, smoke'em if you got'em!
+6. Once you've forked your gist, you can optionally delete unused sub-files of the gist: JSBin will create separate gist files for the `html` portion of the gist, which in this case, are not needed - you are only interested in the `.js` sub-file in the gist, it will be called something like `jsbin.jihure.js`, where `jihure` is the JSBin id for your bin.  You've created your gist, pat yourself on the back, smoke'em if you got'em!
 
 ## Embed the Gist in your Studies
 
