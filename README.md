@@ -1,5 +1,17 @@
-# studies
-A website page to record our programming studies...
+# Studies
+
+**Table of Contents**
+
+- [Studies](#studies)
+  - [Overview](#overview)
+  - [Setup](#setup)
+  - [Create a JSBin per JavaScript Subtopic](#create-a-jsbin-per-javascript-subtopic)
+  - [Embed the Gist in your Studies](#embed-the-gist-in-your-studies)
+  - [JavaScript SubTopics](#javaScript-subtopics)
+
+## Overview
+
+You are working hard to become a kick-ass software engineer.  One of the best ways to freeze-dry your knowledge is to codify your new knowledge in study notes that include explained code examples.  By cleary recording your notes, you'll be reiterating and strengthening your working understanding of the concepts, you'll be exemplifying your comprehension to prospective employers, helping other students to learn as they walk in your footsteps, and you'll be able to return to each topic for a refresher at any time.
 
 ## Setup
 
@@ -217,7 +229,10 @@ myVariable = "someString";
 2. Importantly, in the `<code></code>` tag, replace the `data-gist-id` attribute with your gist id (the id can be found back on your GitHub gist page, as the last number in the URL of the gist), for example, `https://gist.github.com/jfraboni/4ae6dead16cdb2271041` - the gist id here is, `4ae6dead16cdb2271041`
 3. Finally, also in the `<code></code>`, replace the `data-gist-file` with the name of the gist sub-file, which you can find on the GitHub gist page, within the header of the of the JavaScript gist sub-file.  For example, the sub-file embedded from the gist at <a href="`https://gist.github.com/jfraboni/4ae6dead16cdb2271041`" target="_blank">https://gist.github.com/jfraboni/4ae6dead16cdb2271041</a> is `jsbin.jihure.js`.
 4. Okay, once you do this, save your changes, then flip back to your `studies.html` page and refresh, you should see your nice section header for the subtop, plus your gist right below this, exemplifying your smartness!
-5. Ensure you have JavaScript subtops exemplifying the following:
+
+## JavaScript SubTopics
+
+1. Ensure you have JavaScript subtops exemplifying the following:
     1. Variables
     2. Datatypes (Simple & Complex):
         1. Number
